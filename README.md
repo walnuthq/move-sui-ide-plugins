@@ -2,6 +2,18 @@
 
 A collection of IDE plugins and language tools for the `Move` programming language, focusing to `Sui` blockchain platforms.
 
+## Examples
+
+<video width="640" height="360" controls>
+  <source src="videos/SUI-JetBrains.mov" type="video/quicktime">
+  Your browser does not support the video tag.
+</video>
+
+<video width="640" height="360" controls>
+  <source src="videos/SUI-vscode.mov" type="video/quicktime">
+  Your browser does not support the video tag.
+</video>
+
 ## Components
 
 This repository contains three main components:
