@@ -4,15 +4,7 @@ A collection of IDE plugins and language tools for the `Move` programming langua
 
 ## Examples
 
-<video width="640" height="360" controls>
-  <source src="videos/SUI-JetBrains.mov" type="video/quicktime">
-  Your browser does not support the video tag.
-</video>
-
-<video width="640" height="360" controls>
-  <source src="videos/SUI-vscode.mov" type="video/quicktime">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/4c85b84e-e1da-4b99-9e9b-58d75b9ca05b
 
 ## Components
 
