@@ -1,0 +1,39 @@
+{
+  "name": "move-language",
+  "displayName": "Move Language",
+  "description": "Move language support for Visual Studio Code",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:move"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [{
+      "id": "move",
+      "aliases": ["Move", "move"],
+      "extensions": [".move"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "move",
+      "scopeName": "source.move",
+      "path": "./syntaxes/move.tmLanguage.json"
+    }],
+    "semanticTokenTypes": [
+      {
+        "id": "moveKeyword",
+        "superType": "keyword",
+        "description": "Move keywords"
+      }
+    ]
+  },
+  "dependencies": {
+    "vscode-languageclient": "^9.0.1"
+  }
+}

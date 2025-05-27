@@ -1,0 +1,91 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Move",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#storage-types"
+    },
+    {
+      "include": "#functions"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.move",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.move",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.move",
+          "match": "\\b(if|else|while|loop|return|abort|break|continue)\\b"
+        },
+        {
+          "name": "keyword.other.move",
+          "match": "\\b(module|script|struct|fun|public|friend|const|let|acquires|as|copy|move|has|entry|use)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.move",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.move",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.numeric.decimal.move",
+          "match": "\\b([0-9]+)\\b"
+        },
+        {
+          "name": "constant.numeric.hex.move",
+          "match": "\\b0x[0-9a-fA-F]+\\b"
+        },
+        {
+          "name": "constant.language.boolean.move",
+          "match": "\\b(true|false)\\b"
+        }
+      ]
+    },
+    "storage-types": {
+      "name": "storage.type.move",
+      "match": "\\b(u8|u16|u32|u64|u128|u256|bool|address|vector|signer)\\b"
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "entity.name.function.move",
+          "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\("
+        }
+      ]
+    }
+  },
+  "scopeName": "source.move"
+}

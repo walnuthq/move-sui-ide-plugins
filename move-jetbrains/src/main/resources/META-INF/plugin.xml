@@ -1,0 +1,72 @@
+<idea-plugin>
+    <id>org.move.jetbrains</id>
+    <name>Move Language</name>
+    <vendor email="support@aptos.dev" url="https://github.com/aptos-labs/move-on-aptos">Aptos Labs</vendor>
+
+    <description><![CDATA[
+    Move language support for JetBrains IDEs.
+    
+    Features:
+    - Syntax highlighting for .move files
+    - Keyword autocompletion
+    - Language Server Protocol (LSP) integration
+    - Code completion
+    - Error highlighting
+    - Go to definition
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+
+    <resource-bundle>messages.MoveBundle</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- File Type -->
+        <fileType 
+            name="Move"
+            implementationClass="org.move.jetbrains.MoveFileType"
+            fieldName="INSTANCE"
+            language="Move"
+            extensions="move"/>
+
+        <!-- Language -->
+        <lang.parserDefinition 
+            language="Move"
+            implementationClass="org.move.jetbrains.parser.MoveParserDefinition"/>
+
+        <!-- Syntax Highlighting -->
+        <lang.syntaxHighlighterFactory 
+            language="Move"
+            implementationClass="org.move.jetbrains.highlight.MoveSyntaxHighlighterFactory"/>
+
+        <!-- LSP Support -->
+        <!-- TODO: Enable LSP support once proper dependencies are configured -->
+        <!--
+        <platform.lsp.serverSupportProvider
+            implementation="org.move.jetbrains.lsp.MoveLspServerSupportProvider"/>
+        -->
+
+        <!-- Comment Configuration -->
+        <lang.commenter 
+            language="Move"
+            implementationClass="org.move.jetbrains.MoveCommenter"/>
+
+        <!-- Brace Matcher -->
+        <lang.braceMatcher 
+            language="Move"
+            implementationClass="org.move.jetbrains.MoveBraceMatcher"/>
+        
+        <!-- Code Completion -->
+        <completion.contributor 
+            language="Move"
+            implementationClass="org.move.jetbrains.completion.MoveCompletionContributor"/>
+    </extensions>
+
+    <applicationListeners>
+        <listener 
+            class="org.move.jetbrains.listeners.MyProjectManagerListener"
+            topic="com.intellij.openapi.project.ProjectManagerListener"/>
+    </applicationListeners>
+</idea-plugin>
