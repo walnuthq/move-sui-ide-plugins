@@ -6,7 +6,7 @@ A collection of IDE plugins and language tools for the `Move` programming langua
 
 ## Demo
 
-https://github.com/user-attachments/assets/4c85b84e-e1da-4b99-9e9b-58d75b9ca05b
+https://github.com/user-attachments/assets/3d14feba-4603-4b8e-9e6f-b433fd0f0d59
 
 ## Components
 
