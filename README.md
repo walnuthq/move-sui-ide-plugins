@@ -2,6 +2,8 @@
 
 A collection of IDE plugins and language tools for the `Move` programming language, focusing to `Sui` blockchain platforms.
 
+> ℹ️ **Info:** This repository showcases a Proof of Concept implementation of the Move Language Server Protocol, along with sample editor extensions for VSCode and JetBrains. It was developed as part of a grant application submitted to the Sui Foundation.
+
 ## Demo
 
 https://github.com/user-attachments/assets/4c85b84e-e1da-4b99-9e9b-58d75b9ca05b
