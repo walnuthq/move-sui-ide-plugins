@@ -2,7 +2,7 @@
 
 A collection of IDE plugins and language tools for the `Move` programming language, focusing to `Sui` blockchain platforms.
 
-## Examples
+## Demo
 
 https://github.com/user-attachments/assets/4c85b84e-e1da-4b99-9e9b-58d75b9ca05b
 
