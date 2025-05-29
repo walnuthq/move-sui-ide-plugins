@@ -1,8 +1,8 @@
 # Move IDE Plugins (POC)
 
-A collection of IDE plugins and language tools for the `Move` programming language, focusing to `Sui` blockchain platforms.
+> ℹ️ **Info:** This repository is only a Proof of Concept implementation of the Move Language Server Protocol, along with sample editor extensions for VSCode and JetBrains. More work is required to make it production ready.
 
-> ℹ️ **Info:** This repository is only a Proof of Concept implementation of the Move Language Server Protocol, along with sample editor extensions for VSCode and JetBrains. It was developed as part of a grant application submitted to the Sui Foundation.
+A collection of IDE plugins and language tools for the `Move` programming language, focusing to `Sui` blockchain platforms.
 
 ## Demo
 
