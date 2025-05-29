@@ -6,7 +6,8 @@ A collection of IDE plugins and language tools for the `Move` programming langua
 
 ## Demo
 
-https://github.com/user-attachments/assets/3d14feba-4603-4b8e-9e6f-b433fd0f0d59
+![sui-jetbrains-demo](https://github.com/user-attachments/assets/e2b8ca20-ea6e-4645-890d-b453a7b0aaf4)
+
 
 ## Components
 
